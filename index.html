@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AudioStore</title>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding-top: 200px;
+    }
+
+    .player {
+      margin: 0 auto;
+      width: 300px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .message {
+      height: 20px;
+      text-align: center;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .controls {
+      background: #333;
+      padding: 8px;
+    }
+
+    .button {
+      color: white;
+      width: 20px;
+      margin: 3px 0 0 0;
+      font-size: 16px;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+
+    .track {
+      position: relative;
+      width: 236px;
+      margin: 7px 0 0 16px;
+      height: 10px;
+      border: 1px solid #666;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .progress {
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      background: #f00;
+    }
+
+    .scrubber {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      margin: -4px 0 0 -9px;
+      background: #f00;
+      border: solid 3px #ddd;
+      cursor: pointer;
+      box-shadow: 0 0 5px #000, inset 0 0 4px #400;
+    }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <p class="message"></p>
+    <div class="controls">
+      <button class="button fa fa-play"></button>
+      <div class="track">
+        <div class="progress"></div>
+        <div class="scrubber"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/db.js"></script>
+  <script src="lib/audiostore.js"></script>
+  <script src="lib/streamer.js"></script>
+  <script src="lib/player.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
