@@ -13,7 +13,7 @@
     }
 
     body {
-      padding-top: 200px;
+      padding-top: 150px;
     }
 
     .player {
@@ -76,6 +76,17 @@
       cursor: pointer;
       box-shadow: 0 0 5px #000, inset 0 0 4px #400;
     }
+
+    .logs {
+      display: block;
+      max-width: 800px;
+      height: 300px;
+      margin: 50px auto 0;
+      padding: 12px;
+      background: #f6f6f6;
+      border: 1px solid #555;
+      overflow: scroll;
+    }
   </style>
 </head>
 <body>
@@ -92,6 +103,8 @@
       </div>
     </div>
   </div>
+
+  <pre class="logs"></pre>
 
   <script src="lib/db.js"></script>
   <script src="lib/audiostore.js"></script>
