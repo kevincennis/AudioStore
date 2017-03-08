@@ -1,6 +1,6 @@
 const url      = 'audio/thepretender.mp3';
 const el       = document.querySelector('.player');
-const ac       = new AudioContext();
+const ac       = new ( window.AudioContext || window.webkitAudioContext )();
 const store    = new AudioStore( ac );
 const streamer = new Streamer( url, store );
 const logs     = document.querySelector('.logs');
