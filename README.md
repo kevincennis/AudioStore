@@ -30,6 +30,16 @@ from the `AudioStore` and schedules playback with sample-level accuracy.
 The idea is that this only holds about ~10s of audio in memory at
 any given time.
 
+### StreamCoordinator
+
+Responsible for managing and synchronizing multiple `Streamer` instances.
+
+Provides a nearly identical API to `Streamer` so that it can be used with
+a `Player` instance.
+
+Note: this is not fully fleshed out, and was mostly built as a demonstration
+for someone I'm helping out with a related project.
+
 ### Player
 
-The UI for a `Streamer`. Pretty standard stuff.
+The UI for a `Streamer` or `StreamCoordinator`. Pretty standard stuff.
