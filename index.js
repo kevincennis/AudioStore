@@ -5,8 +5,8 @@ const logs     = document.querySelector('.logs');
 const info     = console.info;
 
 const urls = [
-  '/audio/thepretender.mp3',
-  '/audio/thepretender-low.mp3'
+  'audio/thepretender.mp3',
+  'audio/thepretender-low.mp3'
 ];
 
 const streamer = new StreamCoordinator( urls, store );
