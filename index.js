@@ -1,3 +1,7 @@
+import AudioStore        from './lib/audiostore.js';
+import StreamCoordinator from './lib/streamcoordinator.js';
+import Player            from './lib/player.js';
+
 const el       = document.querySelector('.player');
 const ac       = new ( window.AudioContext || window.webkitAudioContext )();
 const store    = new AudioStore( ac );
