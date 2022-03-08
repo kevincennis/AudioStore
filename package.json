@@ -5,13 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "python -m SimpleHTTPServer",
+    "start": "npx static-server -p 8000",
     "test": "eslint ."
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@starryinternet/eslint-config-starry": "^10.0.0",
-    "eslint": "^7.9.0"
+    "@starryinternet/eslint-config-starry": "^10.4.0",
+    "eslint": "^8.10.0"
   }
 }

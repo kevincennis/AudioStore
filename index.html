@@ -77,12 +77,28 @@
       box-shadow: 0 0 5px #000, inset 0 0 4px #400;
     }
 
-    .toggle {
-      max-width: 500px;
+    .faders {
       margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-      font-family: Helvetica;
+      max-width: 300px;
+    }
+
+    .faders label {
+      display: block;
+      text-transform: uppercase;
+      font-family: Helvetica, sans-serif;
+      overflow: hidden;
+      font-size: 0.75rem;
+      line-height: 1.65rem;
+      padding: 0.25rem
+    }
+
+    .faders label:nth-child(even) {
+      background: #e6e6f0;
+    }
+
+    .faders input {
+      float: right;
+      margin-top: 5px;
     }
 
     .logs {
@@ -117,10 +133,7 @@
     </div>
   </div>
 
-  <p class="toggle">
-    <input type="radio" name="chooseone" value="one" id="one" checked><label for="one"> Stream 1 (Normal)</label>
-    <input type="radio" name="chooseone" value="two" id="two"><label for="two"> Stream 2 (Quiet)</label>
-  </p>
+  <p class="faders"></p>
 
   <div class="logs" width=800 height=300></div>
 

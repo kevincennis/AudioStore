@@ -2,7 +2,6 @@
   "root": true,
   "extends": "@starryinternet/starry",
   "parserOptions": {
-    "ecmaVersion": 9,
     "sourceType": "module"
   }
 }

@@ -1,7 +1,10 @@
 # AudioStore
 
-Launch the demo with `npm start` and visit `http://localhost:8000`.
+`AudioStore` saves blobs to `IndexedDB` and streams small chunks just-in-time.
+This has the effect of significantly reducing memory usage of audio-intensive applications, because only a few seconds of audio needs to be loaded into
+memory at a time.
 
+Launch the demo with `npm start` and visit `http://localhost:8000`.
 
 ### DB
 
@@ -36,9 +39,6 @@ Responsible for managing and synchronizing multiple `Streamer` instances.
 
 Provides a nearly identical API to `Streamer` so that it can be used with
 a `Player` instance.
-
-Note: this is not fully fleshed out, and was mostly built as a demonstration
-for someone I'm helping out with a related project.
 
 ### Player
 
